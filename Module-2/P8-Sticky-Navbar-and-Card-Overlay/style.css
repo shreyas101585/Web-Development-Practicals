@@ -1,44 +1,28 @@
 
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: #f4f4f4;
-    color: #222;
+    font-family: Arial;
+    background: #eae1e1;
 }
 
-/* Sticky Navigation Bar */
 .navbar {
     position: sticky;
     top: 0;
-    z-index: 1000;
-
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
-    padding: 20px 8%;
-    background: #172554;
+    padding: 20px;
+    background: navy;
     color: white;
-}
-
-.logo {
-    font-size: 26px;
 }
 
 .nav-links {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     list-style: none;
 }
 
@@ -47,106 +31,52 @@ body {
     text-decoration: none;
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: #dbeafe;
+h1, h2, h3 {
+    margin: 15px;
 }
 
-.hero h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-/* About Section */
-.about {
-    padding: 70px 8%;
-    text-align: center;
-}
-
-/* Projects Section */
-.projects {
-    padding: 70px 8%;
-}
-
-.projects h2 {
-    text-align: center;
-    margin-bottom: 35px;
+p {
+    margin: 10px;
 }
 
 .card-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
+    padding: 30px;
 }
 
-/* Project Card */
 .project-card {
     position: relative;
-
-    width: 280px;
+    width: 250px;
     background: white;
-    border-radius: 12px;
-    overflow: hidden;
-
-    box-shadow: 0 4px 12px #00000020;
+    border-radius: 10px;
 }
 
 .card-image {
-    height: 170px;
+    height: 150px;
 }
 
-.image-one {
-    background: linear-gradient(135deg, #1e3a8a, #60a5fa);
-}
+.image-one { background: blue; }
+.image-two { background: purple; }
+.image-three { background: green; }
 
-.image-two {
-    background: linear-gradient(135deg, #581c87, #c084fc);
-}
-
-.image-three {
-    background: linear-gradient(135deg, #065f46, #6ee7b7);
-}
-
-/* Card Content */
 .card-content {
-    padding: 20px;
+    padding: 15px;
 }
 
-.card-content h3 {
-    margin-bottom: 10px;
-}
-
-/* Overlay Badge */
 .card-badge {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index: 2;
-
-    background: #facc15;
-    color: #222;
-    padding: 6px 12px;
-    border-radius: 20px;
-
-    font-size: 12px;
-    font-weight: bold;
+    top: 10px;
+    right: 10px;
+    background: yellow;
+    padding: 5px;
 }
 
-/* Contact Section */
-.contact {
-    padding: 70px 8%;
-    text-align: center;
-    background: #e5e7eb;
-}
-
-/* Footer */
 footer {
-    padding: 20px;
-    text-align: center;
-    background: #172554;
+    background: navy;
     color: white;
+    text-align: center;
+    padding: 20px;
 }
-

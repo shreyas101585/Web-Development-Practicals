@@ -1,165 +1,76 @@
 
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #222;
+    font-family: Arial;
     background: #f5f5f5;
+    color: #222;
 }
 
-/* Navigation Bar */
+.navbar, footer {
+    background: #172554;
+    color: white;
+    padding: 20px 8%;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 8%;
-    background: #172554;
-    color: white;
-}
-
-.logo {
-    font-size: 26px;
 }
 
 .nav-links {
     display: flex;
-    gap: 25px;
+    gap: 15px;
     list-style: none;
 }
 
-.nav-links a {
+a {
     color: white;
     text-decoration: none;
 }
 
-/* Hero Section */
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 15px;
     background: #dbeafe;
-}
-
-.hero h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 22px;
+    margin: 20px;
+    padding: 10px;
     background: #172554;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
 }
 
-/* About Section */
-.about,
-.projects,
-.contact {
-    padding: 60px 8%;
-}
-
-.about {
+.about, .projects, .contact {
+    padding: 40px 8%;
     text-align: center;
-}
-
-/* Project Cards */
-.projects h2 {
-    text-align: center;
-    margin-bottom: 30px;
 }
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
 }
 
 .project-card {
-    flex: 1 1 220px;
-    max-width: 280px;
-    padding: 25px;
+    padding: 20px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 3px 10px #00000015;
+    flex: 1 1 220px;
+    max-width: 280px;
 }
 
-.project-card h3 {
-    margin-bottom: 10px;
-    color: #172554;
-}
+footer { text-align: center; }
 
-/* Contact */
-.contact {
-    text-align: center;
-    background: #e5e7eb;
-}
-
-/* Footer */
-footer {
-    padding: 20px;
-    text-align: center;
-    background: #172554;
-    color: white;
-}
-
-/* Tablet Screens */
-@media (max-width: 768px) {
-
-    .navbar {
-        padding: 18px 5%;
-    }
-
-    .nav-links {
-        gap: 12px;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-    }
-}
-
-/* Mobile Screens */
 @media (max-width: 550px) {
-
-    .navbar {
+    .navbar, .card-container {
         flex-direction: column;
-        gap: 15px;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero {
-        padding: 70px 15px;
-    }
-
-    .hero h1 {
-        font-size: 27px;
-    }
-
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-card {
-        width: 100%;
-        max-width: 100%;
     }
 }
