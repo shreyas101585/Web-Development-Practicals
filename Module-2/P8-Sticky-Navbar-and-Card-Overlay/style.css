@@ -1,0 +1,152 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #222;
+}
+
+/* Sticky Navigation Bar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+    background: #172554;
+    color: white;
+}
+
+.logo {
+    font-size: 26px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #dbeafe;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* About Section */
+.about {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+/* Projects Section */
+.projects {
+    padding: 70px 8%;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Project Card */
+.project-card {
+    position: relative;
+
+    width: 280px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px #00000020;
+}
+
+.card-image {
+    height: 170px;
+}
+
+.image-one {
+    background: linear-gradient(135deg, #1e3a8a, #60a5fa);
+}
+
+.image-two {
+    background: linear-gradient(135deg, #581c87, #c084fc);
+}
+
+.image-three {
+    background: linear-gradient(135deg, #065f46, #6ee7b7);
+}
+
+/* Card Content */
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+}
+
+/* Overlay Badge */
+.card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+
+    background: #facc15;
+    color: #222;
+    padding: 6px 12px;
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+    padding: 70px 8%;
+    text-align: center;
+    background: #e5e7eb;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #172554;
+    color: white;
+}
+
